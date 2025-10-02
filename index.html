@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Milage Calculator!!</title>
+</head>
+<body>
+    <div class="box">
+    <h1 class="title">Milage Calculator!</h1>
+    <div class="container">
+        <h2 class="text">
+            For  <span class="txt"> </span>
+        </h2>
+    </div>
+   <h3>Enter your trip inital odometer reading (in km)</h3>
+    <input type="number" id="in1">
+    <h3>Enter your trip final odometer reading (in km)</h3>
+    <input type="number" id="in2">
+    <p id="v1">
+
+    </p>
+    <h3>Enter Fuel (in liters)</h3>
+    <input type="number" id="v3">
+    <h4 id="final">
+
+    </h4>
+    <button id="btn" onclick="milage()">Calcute</button>
+    </div>
+     <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        const typed = new Typed(".txt",{
+            strings:["Bikes","Cars","Trucks"],
+            typeSpeed:120,
+            backSpeed:120,
+            loop:true,
+        });
+    </script>
+</body>
+</html>
